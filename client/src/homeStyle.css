@@ -1,0 +1,131 @@
+body {
+  background-color: #5585b0;
+}
+
+.btnStyle {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #183651;
+  color: #183651;
+  cursor: pointer;
+}
+
+/* Estilos del Navbar */
+.navbarcolor {
+  background-color: #183651;
+}
+
+.navbarwidth {
+  min-width: 100%;
+}
+
+/* Estilos panelContainer */
+
+.panelContainer {
+  background-color: #ece5df;
+  min-height: 100vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 64px);
+}
+
+/* Estilos tweetInputContainer */
+
+.tweetInputContainer {
+    width: 100hv;
+    height: auto;
+    margin: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    background-color: white;
+    border-color: #d4d4d8;
+    border-style: solid;
+    border-width: 2px;
+    justify-content: space-between;
+}
+
+/* Estilos tweetInput */
+
+.tweetInput {
+    flex: 1;
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    padding: 12px;
+    border: none;
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.tweetInput:focus {
+  outline: none;
+}
+
+/* Estilos tweetContainer */
+
+.tweetContainer {
+    min-width: 133vh;
+    width: 100%;
+  }
+
+/* Estilos btn */
+
+.btnStyle:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #183651;
+    color: white;
+    background-color: #183651;
+}
+
+
+/* Estilos upCentralPanel */
+
+.upCentralPanel {
+    min-height: 30px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #183651;
+  }
+
+/* Estilos centralPanelContainer */
+
+.centralPanelContainer {
+  flex: 1;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* Estilos lateralPanelContainer */
+
+.lateralPanelContainer {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/**/
+/* Estilos para barras de desplazamiento invisibles */
+
+/* Para el contenedor principal */
+.centralPanelContainer::-webkit-scrollbar {
+  width: 0px; /* Ancho de la barra de desplazamiento, establecemos en 0px para ocultarla */
+  background: transparent; /* Fondo transparente */
+}
+
+.centralPanelContainer::-webkit-scrollbar-thumb {
+  background: transparent; /* Color de la barra desplazable transparente */
+}
+
+/* Para el textarea (tweetInput) */
+.tweetInput::-webkit-scrollbar {
+  width: 0px; /* Ancho de la barra de desplazamiento, establecemos en 0px para ocultarla */
+  background: transparent; /* Fondo transparente */
+}
+
+.tweetInput::-webkit-scrollbar-thumb {
+  background: transparent; /* Color de la barra desplazable transparente */
+}
